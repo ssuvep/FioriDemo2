@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="suppliers.controller.supplierView" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					    <CustomTile id="tile0">
+					        <content>
+					            <Image width="140px" height="140px" id="image0" xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" cd:w5g.dt.context="/Alphabetical_list_of_products" src="{ProductName}"/>
+					        </content>
+					    </CustomTile>
+					    <List noDataText="Drop list items here" id="list0" items="{/Suppliers}">
+					        <items>
+					            <StandardListItem type="{HomePage}" title="{SupplierID}" description="{CompanyName}" icon="sap-icon://photo-voltaic" id="item0"/>
+					        </items>
+					    </List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
